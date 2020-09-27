@@ -36,7 +36,21 @@ function foobar() {
         resultDescription = "You just want to be the center of the room, the star of the show. You expect heads to turn when you walk into a room, and you declare that the party doesn’t start until you arrive (and you arrive “fashionably late”). Physical Education is your favorite subject and you’re currently playing at least 3 sports. What CAN’T you do?";
     }
 
-    $.post('/submitquiz', {result: result, resultDescription: resultDescription})
+    /*$.post('/submitquiz', {result: result, resultDescription: resultDescription}, success: function(data) {
+		if (data.redirect) {
+			window.location.href = data.redirect;
+		}
+	});*/
+	$.ajax({
+		type: 'POST',
+		url: '/submitquiz',
+		data: {result: result, resultDescription: resultDescription},
+		success: function(data, textStatus) {
+			if (data) {
+				window.location.replace(data);
+			}
+		}
+	});
 	
 	return false;
 }

@@ -46,18 +46,18 @@ App.post('/submitquiz', async (req, res) => {
 	
 	const datapoint = new DataDB({
 		code: uniqueCode,
-		result: sandwichResult,
+		result: result,
 		description: resultDescription
 	});
 	
-	await datapoint.save()
+	await datapoint.save();
 	
-	res.redirect('/result/' + uniqueCode)
+	res.send('/result/' + uniqueCode);
 });
 
 App.get('/result/:code', async (req, res) => {
-	const query = await DataDB.find({code: req.params.code})
-	res.render('result', {userCode: code, userResult: query.result, userDescription: query.description});
+	const query = await DataDB.find({code: req.params.code});
+	res.render('result', {userCode: req.params.code, userResult: query[0].result, userDescription: query[0].description});
 });
 
 App.listen(PORT, () => {
