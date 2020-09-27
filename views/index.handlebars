@@ -1,4 +1,3 @@
-HELLO
 <h1>The Personality Sandwich</h1>
 <p>Make a sandwich to find out a very accurate description of yourself :D</p>
 <br>
@@ -8,7 +7,7 @@ HELLO
 <!--STARTING THE QUIZ!!!!-->
 
 
-<form>
+<form onsubmit="evaluate()">
     <!--Breads-->
     <p>Choose your bread!</p>
     <div>
@@ -17,13 +16,13 @@ HELLO
         <input type="radio" id="white" name="bread" value=1>
         <label for="white">White</label>
         <br>
-        
+
         <img src="./public/images/rye.png" alt="Rye Bread">
         <br>
         <input type="radio" id="rye" name="bread" value=4>
         <label for="rye">Rye</label>
         <br>
-        
+
         <img src="./public/images/wholewheat.png" alt="Whole Wheat Bread">
         <br>
         <input type="radio" id="wholeWheat" name="bread" value=2>
@@ -46,7 +45,7 @@ HELLO
         <label for="bologna">Bologna</label>
         <br>
 
-        <img src="./public/images/bacon.png" alt="Bacon" width="256" height="256"> 
+        <img src="./public/images/bacon.png" alt="Bacon" width="256" height="256">
         <br>
         <input type="radio" id="bacon" name="meat" value=4>
         <label for="bacon">Bacon</label>
@@ -96,25 +95,25 @@ HELLO
     <!--Vegetals-->
     <p>Choose your veggies!</p>
     <div>
-        <img src="./public/images/lettuce.png" alt="Lettuce" width="256" height="256"> 
+        <img src="./public/images/lettuce.png" alt="Lettuce" width="256" height="256">
         <br>
         <input type="radio" id="lettuce" name="veggie" value=1>
         <label for="lettuce">Lettuce</label>
         <br>
 
-        <img src="./public/images/tomato.png" alt="Tomato" width="256" height="256"> 
+        <img src="./public/images/tomato.png" alt="Tomato" width="256" height="256">
         <br>
         <input type="radio" id="tomato" name="veggie" value=2>
         <label for="tomato">Tomato</label>
         <br>
 
-        <img src="./public/images/pickle.png" alt="Pickle" width="256" height="256"> 
+        <img src="./public/images/pickle.png" alt="Pickle" width="256" height="256">
         <br>
         <input type="radio" id="pickle" name="veggie" value=4>
         <label for="pickle">Pickles</label>
         <br>
 
-        <img src="./public/images/cucumber.png" alt="Cucumber" width="256" height="256"> 
+        <img src="./public/images/cucumber.png" alt="Cucumber" width="256" height="256">
         <br>
         <input type="radio" id="cucumber" name="veggie" value=3>
         <label for="cucumber">Cucumber</label>
@@ -124,25 +123,25 @@ HELLO
     <!--Heat Type-->
     <p>How would you like your sandwich heated?</p>
     <div>
-        <img src="./public/images/untoasted.png" alt="Untoasted" width="256" height="256"> 
+        <img src="./public/images/untoasted.png" alt="Untoasted" width="256" height="256">
         <br>
         <input type="radio" id="none" name="hType" value=1>
         <label for="none">None</label>
         <br>
 
-        <img src="./public/images/light.png" alt="Lightly Toasted" width="256" height="256"> 
+        <img src="./public/images/light.png" alt="Lightly Toasted" width="256" height="256">
         <br>
         <input type="radio" id="light" name="hType" value=2>
         <label for="light">Lightly Toasted</label>
         <br>
 
-        <img src="./public/images/grilled.png" alt="Grilled" width="256" height="256"> 
+        <img src="./public/images/grilled.png" alt="Grilled" width="256" height="256">
         <br>
         <input type="radio" id="grilled" name="hType" value=3>
         <label for="grilled">Grilled</label>
         <br>
 
-        <img src="./public/images/burnt.jpg" alt="BURNT" width="256" height="256"> 
+        <img src="./public/images/burnt.jpg" alt="BURNT" width="256" height="256">
         <br>
         <input type="radio" id="burnt" name="hType" value=4>
         <label for="burnt"><strong>BURNT</strong></label>
@@ -152,29 +151,29 @@ HELLO
     <!--Put it together-->
     <p>How will you choose to hold your sandwich together?</p>
     <div>
-        <img src="./public/images/plastic.png" alt="Plastic" width="256" height="256"> 
+        <img src="./public/images/plastic.png" alt="Plastic" width="256" height="256">
         <br>
         <input type="radio" id="plastic" name="holdIt" value=1>
         <label for="plastic">Plastic Wrap</label>
         <br>
 
-        <img src="./public/images/napkin.png" alt="Napkin" width="256" height="256"> 
+        <img src="./public/images/napkin.png" alt="Napkin" width="256" height="256">
         <br>
         <input type="radio" id="napkin" name="holdIt" value=2>
         <label for="napkin">A Napkin</label>
         <br>
 
-        <img src="./public/images/toothpick.png" alt="Toothpick" width="256" height="256"> 
+        <img src="./public/images/toothpick.png" alt="Toothpick" width="256" height="256">
         <br>
         <input type="radio" id="toothpick" name="holdIt" value=3>
         <label for="toothpick">A Toothpick</label>
         <br>
 
-        <img src="./public/images/failure.png" alt="A Mess" width="256" height="256"> 
+        <img src="./public/images/failure.png" alt="A Mess" width="256" height="256">
         <br>
         <input type="radio" id="failure" name="holdIt" value=4>
         <label for="failure">Succumb to the inevitable collapsing</label>
         <br><br>
     </div>
-
+    <input type="submit" value="Submit">
 </form>
