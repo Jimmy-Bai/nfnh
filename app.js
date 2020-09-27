@@ -41,7 +41,7 @@ App.get('/', (req, res) => {
 
 App.post('/submitquiz', async (req, res) => {
 	uniqueCode = ResultCode();
-	sandwichResult = req.params.sandwwichResult;
+	sandwichResult = req.body.sandwwichResult;
 	
 	const datapoint = new DataDB({
 		code: code,
@@ -53,11 +53,8 @@ App.post('/submitquiz', async (req, res) => {
 	res.redirect('/result/' + code)
 });
 
-App.get('/result/:code', (req, res) => {
-	const query = DataDB.find({code: code}).toArray(function(err, result) {
-		if (err) throw err;
-		
-	});
+App.get('/result/:code', async (req, res) => {
+	const query = await DataDB.find({code: req.params.code})
 	res.render('result', {userCode: code, userResult: result});
 });
 
