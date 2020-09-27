@@ -1,0 +1,28 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(163, 211, 151); 
+    background-image: url('shorturl.at/lvP67');*/
+    background-repeat: repeat-x;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid rgb(214, 153, 153);
+    background-image: url('shorturl.at/lvP67');
+    background-repeat: repeat-x;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    /* color: #596594; */
+    font-size: 55px;
+    text-align: center;
+}
