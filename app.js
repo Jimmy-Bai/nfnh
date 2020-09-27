@@ -3,6 +3,7 @@ const Exphbs = require('express-handlebars');
 const BodyParser = require('body-parser');
 const Handlebars = require('handlebars')
 const Mongoose = require('mongoose');
+const { default: ShortUniqueId } = require('short-unique-id');
 
 require('dotenv').config();
 
@@ -14,6 +15,9 @@ const DataDB = require('./db/Data');
 
 // Start app
 const App = Express();
+
+// Unique results code generator
+const ResultCode = new ShortUniqueId();
 
 App.engine('handlebars', Exphbs({
     defaultLayout: 'layout',
