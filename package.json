@@ -18,6 +18,7 @@
     "handlebars": "^4.7.6",
     "moment": "^2.29.0",
     "mongoose": "^5.10.7",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "short-unique-id": "^3.0.4"
   }
 }
