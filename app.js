@@ -41,24 +41,23 @@ App.get('/', (req, res) => {
 
 App.post('/submitquiz', async (req, res) => {
 	uniqueCode = ResultCode();
-	sandwichResult = req.params.sandwwichResult;
+	result = req.body.result;
+	resultDescription = req.body.resultDescription;
 	
 	const datapoint = new DataDB({
-		code: code,
-		result:result
+		code: uniqueCode,
+		result: sandwichResult,
+		description: resultDescription
 	});
 	
 	await datapoint.save()
 	
-	res.redirect('/result/' + code)
+	res.redirect('/result/' + uniqueCode)
 });
 
-App.get('/result/:code', (req, res) => {
-	const query = DataDB.find({code: code}).toArray(function(err, result) {
-		if (err) throw err;
-		
-	});
-	res.render('result', {userCode: code, userResult: result});
+App.get('/result/:code', async (req, res) => {
+	const query = await DataDB.find({code: req.params.code})
+	res.render('result', {userCode: code, userResult: query.result, userDescription: query.description});
 });
 
 App.listen(PORT, () => {
