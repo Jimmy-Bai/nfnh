@@ -3,6 +3,8 @@
 <br>
 
 <img src="./public/images/sammich.png" alt="Yummy Sandwich" width="570" height="435">
+<br>
+<br>
 
 <!--STARTING THE QUIZ!!!!-->
 
@@ -10,62 +12,79 @@
 <form onsubmit="evaluate()">
     <!--Breads-->
     <p>Choose your bread!</p>
-    <div>
-        <input type="radio" id="white" name="bread" value=1>
-        <label for="white">White</label>
-        <br>
-        <img src="./public/images/white-bread.png" alt="White Bread">
-        <br>
-        
-        <input type="radio" id="rye" name="bread" value=4>
-        <label for="rye">Rye</label>
-        <br>
-        <img src="./public/images/rye.png" alt="Rye Bread">
-        <br>
-        
-        <input type="radio" id="wholeWheat" name="bread" value=2>
-        <label for="wholeWheat">Whole Wheat</label>
-        <br>
-        <img src="./public/images/wholewheat.png" alt="Whole Wheat Bread">
-        <br>
-        
-        <input type="radio" id="sourDough" name="bread" value=3>
-        <label for="sourDough">Sourdough</label>
-        <br>
-        <img src="./public/images/sourdough.jpg" alt="Sourdough Bread">
-        <br><br>
-    </div>
+    <table style="width:60%">
+        <tr>
+            <th><input type="radio" id="white" name="bread" value=1>
+                <label for="white">White</label></th>
+            <th><input type="radio" id="rye" name="bread" value=4>
+                <label for="rye">Rye</label></th>
+        </tr>
+        <tr>
+            <th><img src="./public/images/white-bread.png" alt="White Bread"></th>
+            <th><img src="./public/images/rye.png" alt="Rye Bread"></th>
+        </tr>
+        <tr>
+            <th><input type="radio" id="wholeWheat" name="bread" value=2>
+                <label for="wholeWheat">Whole Wheat</label></th>
+            <th><input type="radio" id="wholeWheat" name="bread" value=2>
+                <label for="wholeWheat">Whole Wheat</label></th>
+        </tr>
+        <tr>
+            <th><img src="./public/images/wholewheat.png" alt="Whole Wheat Bread"></th>
+            <th><img src="./public/images/sourdough.jpg" alt="Sourdough Bread"></th>
+        </tr>
+    </table>
+    <br>
 
     <!--Meats-->
     <p>Choose your meat!</p>
-    <div>     
-        <input type="radio" id="bologna" name="meat" value=3>
-        <label for="bologna">Bologna</label>
-        <br>
-        <img src="./public/images/bologna.png" alt="Bologna" width="256" height="256">
-        <br>
-        
-        <input type="radio" id="bacon" name="meat" value=4>
-        <label for="bacon">Bacon</label>
-        <br>
-        <img src="./public/images/bacon.png" alt="Bacon" width="256" height="256">
-        <br>
-        
-        <input type="radio" id="turkey" name="meat" value=2>
-        <label for="turkey">Turkey</label>
-        <br>
-        <img src="./public/images/turkey.png" alt="Turkey" width="256" height="256">
-        <br>
-
-        <input type="radio" id="ham" name="meat" value=1>
-        <label for="ham">Ham</label>
-        <br>
-        <img src="./public/images/ham.png" alt="Ham" width="256" height="256">
-        <br><br>
-    </div>
+    <table style="width:60%">
+        <tr>
+            <th><input type="radio" id="bologna" name="meat" value=3>
+                <label for="bologna">Bologna</label></th>
+            <th><input type="radio" id="bacon" name="meat" value=4>
+                <label for="bacon">Bacon</label></th>
+        </tr>
+        <tr>
+            <th><img src="./public/images/bologna.png" alt="Bologna" width="256" height="256"></th>
+            <th><img src="./public/images/bacon.png" alt="Bacon" width="256" height="256"></th>
+        </tr>
+        <tr>
+            <th><input type="radio" id="turkey" name="meat" value=2>
+                <label for="turkey">Turkey</label></th>
+            <th><input type="radio" id="ham" name="meat" value=1>
+                <label for="ham">Ham</label></th>
+        </tr>
+        <tr>
+            <th><img src="./public/images/turkey.png" alt="Turkey" width="256" height="256"></th>
+            <th><img src="./public/images/ham.png" alt="Ham" width="256" height="256"></th>
+        </tr>
+    </table>
+    <br>
 
     <!--Cheeses-->
     <p>Choose your cheese!</p>
+    <table style="width:60%">
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th><input type="radio" id="turkey" name="meat" value=2>
+                <label for="turkey">Turkey</label></th>
+            <th><input type="radio" id="ham" name="meat" value=1>
+                <label for="ham">Ham</label></th>
+        </tr>
+        <tr>
+            <th><img src="./public/images/turkey.png" alt="Turkey" width="256" height="256"></th>
+            <th><img src="./public/images/ham.png" alt="Ham" width="256" height="256"></th>
+        </tr>
+    </table>
+    <br>
     <div>
         <input type="radio" id="cheddar" name="cheese" value=2>
         <label for="cheddar">Cheddar</label>
@@ -87,7 +106,7 @@
 
         <input type="radio" id="swiss" name="cheese" value=4>
         <label for="swiss">Swiss</label>
-        <br> 
+        <br>
         <img src="./public/images/swiss.png" alt="Swiss Cheese" width="256" height="256">
         <br><br>
     </div>
@@ -129,13 +148,13 @@
         <img src="./public/images/untoasted.png" alt="Untoasted" width="256" height="256">
         <br>
 
-        
+
         <input type="radio" id="light" name="hType" value=2>
         <label for="light">Lightly Toasted</label>
         <br>
         <img src="./public/images/light.png" alt="Lightly Toasted" width="256" height="256">
         <br>
-        
+
         <input type="radio" id="grilled" name="hType" value=3>
         <label for="grilled">Grilled</label>
         <br>
