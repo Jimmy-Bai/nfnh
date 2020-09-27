@@ -14,24 +14,43 @@ body {
 }
 
 p {
-    font-size: 16px;
-    line-height: 1;
-}
-
-h1 {
-    margin: 0;
-    padding: 20px;
-    /* color: #596594; */
-    font-size: 55px;
+    font-size: 24px;
+    font-family: "Century Gothic";
+    font-weight: bold;
     text-align: center;
 }
 
-form {
+div {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
+/*form {
+    margin-left: 25em;
+}*/
+
 img {
-    border: 2px solid rgb(0, 0, 0)
+    border: 3px ridge rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+table {
+    margin-left: 20em;
+}
+
+#top-picture {
+    margin-left: 35em;
+}
+
+h1 {
+    margin: 0;
+    padding: 50px;
+    /* color: #2a4dda; */
+    background-image: linear-gradient(to left, black, black, black, violet, indigo, blue, green, yellow, orange, red, black, black, black);   
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 55px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
